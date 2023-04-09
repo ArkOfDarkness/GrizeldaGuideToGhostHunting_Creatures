@@ -1,0 +1,282 @@
+{
+	"siteVersion": "1.177.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "GrizeldasGuideToGhostHunting",
+				"abbreviation": "GGtGG",
+				"full": "Grizelda's Guide To Ghost Hunting",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1681023839,
+		"dateLastModified": 1681023839
+	},
+	"monster": [
+		{
+			"name": "The Unshackled",
+			"source": "GrizeldasGuideToGhostHunting",
+			"page": 125,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				{
+					"special": "Any Chaotic Alignment"
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 9",
+				"average": 49
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 19,
+			"dex": 16,
+			"con": 12,
+			"int": 16,
+			"wis": 15,
+			"cha": 9,
+			"save": {
+				"wis": "+4",
+				"dex": "+5",
+				"int": "+5"
+			},
+			"senses": [
+				"blindsight 60ft"
+			],
+			"passive": 14,
+			"immune": [
+				"acid",
+				"cold",
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Unshackled makes three Harrowing Chains attacks."
+					]
+				},
+				{
+					"name": "Harrowing Chains",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. ",
+						"{@h}7 ({@damage 1d6 + 4}) necrotic damage, and the target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. ",
+						"The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The Unshackled enters the Ethereal Plane form the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, but it can't affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Maelstrom of Chains {@recharge 5}",
+					"entries": [
+						"Each creature within 10 feet of the Unshackled must roll a {@dc 14} Dexterity saving throw. On a failure, the creature takes 13 ({@damage 3d6 + 3}) force damage, and it is {@condition stunned} until the Unshackled starts its next turn. On a success, a creature takes half as much damage and is not {@condition stunned}."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/zombie.mp3"
+			},
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"HPR",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Zombie.png",
+			"fluff": {
+				"name": "Zombie",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"From somewhere in the darkness, a gurgling moan is heard. A form lurches into view, dragging one foot as it raises bloated arms and broken hands. The zombie advances, driven to kill anyone too slow to escape its grasp.",
+									{
+										"name": "Dark Servants",
+										"type": "entries",
+										"entries": [
+											"Sinister necromantic magic infuses the remains of the dead, causing them to rise as zombies that do their creator's bidding without fear or hesitation. They move with a jerky, uneven gait, clad in the moldering apparel they wore when put to rest, and carrying the stench of decay.",
+											"Most zombies are made from humanoid remains, though the flesh and bones of any formerly living creature can be imbued with a semblance of life. Necromantic magic, usually from spells, animates a zombie. Some zombies rise spontaneously when dark magic saturates an area. Once turned into a zombie, a creature can't be restored to life except by powerful magic, such as a {@spell resurrection} spell.",
+											"A zombie retains no vestiges of its former self, its mind devoid of thought and imagination. A zombie left without orders simply stands in place and rots unless something comes along that it can kill. The magic animating a zombie imbues it with evil, so left without purpose, it attacks any living creature it encounters."
+										]
+									},
+									{
+										"name": "Hideous Forms",
+										"type": "entries",
+										"entries": [
+											"Zombies appear as they did in life, showing the wounds that killed them. However, the magic that creates these vile creatures often takes time to run its course. Dead warriors might rise from a battlefield, eviscerated and bloated after days in the sun. The muddy cadaver of a peasant could claw its way from the ground, riddled with maggots and worms. A zombie might wash ashore or rise from a marsh, swollen and reeking after weeks in the water."
+										]
+									},
+									{
+										"name": "Mindless Soldiers",
+										"type": "entries",
+										"entries": [
+											"Zombies take the most direct route to any foe, unable to comprehend obstacles, tactics, or dangerous terrain. A zombie might stumble into a fast-flowing river to reach foes on a far shore, clawing at the surface as it is battered against rocks and destroyed. To reach a foe below it, a zombie might step out of an open window. Zombies stumble through roaring infernos, into pools of acid, and across fields littered with caltrops without hesitation.",
+											"A zombie can follow simple orders and distinguish friends from foes, but its ability to reason is limited to shambling in whatever direction it is pointed, pummeling any enemy in its path. A zombie armed with a weapon uses it, but the zombie won't retrieve a dropped weapon or other tool until told to do so."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A zombie doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Zombie.jpg"
+						}
+					}
+				]
+			},
+			"skill": {
+				"athletics": "+6",
+				"arcana": "+5",
+				"history": "+5",
+				"perception": "+4"
+			},
+			"resist": [
+				{
+					"resist": [
+						"fire"
+					]
+				},
+				{
+					"resist": [
+						"lightning"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					]
+				},
+				{
+					"resist": [
+						{
+							"special": "all damage from magical attacks"
+						}
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Eldritch Drain",
+					"entries": [
+						"When the Unshackled deals damage to a creature, that creature must make a Charisma saving throw if any magic items on its person have 1 or more charges. (The DC is equal to 13 + the number of such items it has)",
+						"On a failure, the Unshackled drains 1 charge from each item, regaining 5 ({@dice 1d8 + 1}) hit points for each charge.",
+						"Drained charges are regained normally. If this draining reduces an item's charges to 0, any effects triggered by the item losing its last charge happen at once."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The Unshackled can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Item Jump",
+					"entries": [
+						"The Unshackled always knows the location and type (weapon, potion, wand, etc.) of each magic item within 150 feet of it.",
+						"Once on each of its turns, when such an item is within its reach (even if the item is on another creature's body), the Unshackled can use 10 feet of its movement to teleport, emerging from a second magic item within 150 feet of the first one.",
+						"It cannot teleport if there is no second item to emerge from, emerging instead in an unoccupied space within 5 feet of the first item."
+					]
+				},
+				{
+					"name": "Unfettered Spirit",
+					"entries": [
+						"Unless the Unshackled is {@condition incapacitated}, its speed cannot be reduced, it is immune to any effect that would sense its emotions or read its thoughts, and it is hidden from divination magic.",
+						"It also has advantage on saving throws against any effect that Turns or Controls Undead."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The Unshackled doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Unusual Nature"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		}
+	]
+}
